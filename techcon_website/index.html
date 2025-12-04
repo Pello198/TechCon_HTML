@@ -4,6 +4,37 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TechCon 2024</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header, footer {
+      background-color: #222;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+    }
+    main {
+      padding: 2rem;
+    }
+    .video-container {
+      text-align: center;
+      margin: 1rem 0;
+    }
+  </style>
 </head>
 <body>
   <!-- Header Section -->
@@ -30,22 +61,16 @@
         that will shape the future of tech.
       </p>
 
-      <!-- Embedded Video -->
-      <div class="video-container" style="max-width: 640px; margin: auto;">
-        <iframe
-          width="640"
-          height="360"
-          src="https://www.youtube.com/embed/aAvDI1qae-U"
-          title="TechCon 2024 Promotional Video"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
+      <!-- Native Video -->
+      <div class="video-container">
+        <video width="640" height="360" controls>
+          <source src="promo-video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
       </div>
       <p id="video-desc">
         Promotional video highlighting TechCon 2024 activities and sessions.
       </p>
-  
     </section>
   </main>
 
